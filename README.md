@@ -13,7 +13,7 @@ TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressive
 ### Results
 
 <div align="center">
-	<img src="img/examples.jpg" width="90%">
+	<img src="img/example.jpg" width="90%">
 </div>
 
 ### Preparation
