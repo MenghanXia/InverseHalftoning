@@ -4,7 +4,7 @@ We run this code under [TensorFlow](https://www.tensorflow.org) 1.6 on Ubuntu16.
 
 ### Network Architecture
 
-TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressively Residual Learning"] accepted to ACCV 2018.
+TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressively Residual Learning"](https://menghanxia.github.io) accepted to ACCV 2018.
 
 <div align="center">
 	<img src="img/network.jpg" width="90%">
