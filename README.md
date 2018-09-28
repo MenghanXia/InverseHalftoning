@@ -7,13 +7,13 @@ We run this code under [TensorFlow](https://www.tensorflow.org) 1.6 on Ubuntu16.
 TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressively Residual Learning"](https://menghanxia.github.io) accepted to ACCV 2018.
 
 <div align="center">
-	<img src="img/network.jpg" width="100%">
+	<img src="img/network.jpg" width="90%">
 </div>
 
 ### Results
 
 <div align="center">
-	<img src="img/examples.jpg" width="100%">
+	<img src="img/examples.jpg" width="90%">
 </div>
 
 ### Preparation
