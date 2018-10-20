@@ -33,7 +33,7 @@ line238: parser.add_argument('--mode', type=str, default='train', help='train, t
 python3 main.py
 ```
 
-- Start evaluation. (pretrained model is provided in the chechpoints folder)
+- Start evaluation. ([pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA) is provided in the chechpoints folder)
 ```python
 line 238: parser.add_argument('--mode', type=str, default='test', help='train, test')
 ```
