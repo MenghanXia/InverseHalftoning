@@ -1,4 +1,4 @@
-Invertible Grayscale
+InvertibleHalftoning
 
 Copyright (c) 2018 The Chinese University of Hong Kong
 
@@ -30,9 +30,9 @@ ITS DERIVATIVES.
 By using the source code, Licensee agrees to cite the following papers in 
 Licensee's publication/work: 
 
-  Menghan Xia, Xueting Liu and Tien-Tsin Wong
-  "Invertible Grayscale"
-  SIGGRAPH ASIA 2018, Tokyo, Japan, Dec. 2018.
+  Menghan Xia and Tien-Tsin Wong
+  "Deep Inverse Halftoning via Progressively Residual Learning"
+  ACCV 2018, Perth, Australia, Dec. 2018.
 
 
 By using or copying the Software, Licensee agrees to abide by the intellectual 
