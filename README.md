@@ -40,3 +40,6 @@ line 238: parser.add_argument('--mode', type=str, default='test', help='train, t
 ```bash
 python3 main.py 
 ```
+
+### Copyright and License
+You are granted with license (refer to LICENSE.txt) for both academic and commercial usages.
