@@ -47,10 +47,10 @@ You are granted with the [license](./LICENSE.txt) for both academic and commerci
 ### Citation
 If any part of our paper and code is helpful to your work, please generously cite with:
 ```
-@inproceedings{XiaYXZX17,
-  author    = {Menghan Xia and Jian Yao and Renping Xie and Mi Zhang and Jinsheng Xiao},
-  title     = {Color Consistency Correction Based on Remapping Optimization for Image Stitching},
-  booktitle = {{IEEE} International Conference on Computer Vision Workshops (ICCVW)},
-  year      = {2017}
+@inproceedings{XiaW18,
+  author    = {Menghan Xia and Tien-Tsin Wong},
+  title     = {Deep Inverse Halftoning via Progressively Residual Learning},
+  booktitle = {Asian Conference on Computer Vision (ACCV)},
+  year      = {2018}
 }
 ```
