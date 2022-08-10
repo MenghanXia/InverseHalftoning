@@ -26,14 +26,14 @@ TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressive
 - Set hyperparameters in [`main.py`](main.py).
 - Start training.
 ```bash
-python3 main.py --mode train --train_dir 'training_data_dir' --val_dir 'val_data_dir'
+python3 main.py --mode train --train_dir 'training_image_dir' --val_dir 'val_image_dir'
 
 ```
 ### Test
 - Download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) and place it in the folder *checkpoints*
-- Start evaluation.
+- Start evaluation and the result will be saved in the folder *output*.
 ```bash
-python3 main.py --mode test
+python3 main.py --mode test --test_dir 'testing_image_dir'
 ```
 
 ### Copyright and License
