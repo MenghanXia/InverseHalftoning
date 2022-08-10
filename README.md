@@ -26,19 +26,13 @@ TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressive
 - Set your image folders and hyperparameters in `main.py`.
 
 - Start training.
-```python
-line238: parser.add_argument('--mode', type=str, default='train', help='train, test')
-```
 ```bash
-python3 main.py
+python3 main.py --mode train
 ```
 
-- Start evaluation. (acess [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ))
-```python
-line 238: parser.add_argument('--mode', type=str, default='test', help='train, test')
-```
+- Start evaluation. (download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) in advance)
 ```bash
-python3 main.py 
+python3 main.py --mode test
 ```
 
 ### Copyright and License
