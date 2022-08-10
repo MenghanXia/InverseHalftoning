@@ -19,11 +19,11 @@ TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressive
 ### Preparation
 
 - You can run exisitng halftone algorithm (*Foyd-Steinberg Error diffusion on 8-bit grayscale image is used in our pretrained model*) to generate halftone version of your continuous-tone grayscale or color images, working as training pairs.
-- The patch size is set to 256x256 in the `model.py` (you may change it to any other size as you like).
+- The patch size is set to 256x256 in the [`model.py`](model.py) (you may change it to any other size as you like).
 - Download the pretrained VGG19 model in [here](https://mega.nz/#!xZ8glS6J!MAnE91ND_WyfZ_8mvkuSa2YcA7q-1ehfSm-Q1fxOvvs).
 
 ### Run
-- Set your image folders and hyperparameters in `main.py`.
+- Set your image folders and hyperparameters in [`main.py`](main.py).
 
 - Start training.
 ```bash
