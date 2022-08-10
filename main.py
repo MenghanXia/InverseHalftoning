@@ -167,9 +167,8 @@ def train(train_list, val_list, debug_mode=True):
     return None
 
 
-def evaluate(test_list, checkpoint_dir):
+def evaluate(test_list, checkpoint_dir, save_dir_test):
     print('Running PRLNet -Evaluation!')
-    save_dir_test = os.path.join("./output/results")
     exists_or_mkdir(save_dir_test)
     # --------------------------------- set model ---------------------------------
     # data fetched within range: [-1,1]
@@ -222,7 +221,7 @@ def evaluate(test_list, checkpoint_dir):
         stde_psnr = np.std(np.array(psnr_list))
         mean_ssim = np.mean(np.array(ssim_list))
         stde_ssim = np.std(np.array(ssim_list))
-        save_path = os.path.join("./output/", "accuracy.txt")
+        save_path = os.path.join(save_dir_test, "accuracy.txt")
         with open(save_path, 'w') as f:
             f.writelines('mean psnr:' + str(mean_psnr) + '\n')
             f.writelines('stde psnr:' + str(stde_psnr) + '\n\n')
@@ -238,7 +237,8 @@ if __name__ == "__main__":
     parser.add_argument('--mode', type=str, default='train', help='train, test')
     parser.add_argument('--train_dir', type=str, default='../Data_HT/dif/train/', help='train, test')
     parser.add_argument('--val_dir', type=str, default='../Data_HT/dif/val/', help='train, test')
-    parser.add_argument('--test_dir', type=str, default='../Data_HT/dif/test/', help='train, test')
+    parser.add_argument('--test_dir', type=str, default='../Data_HT/dif/test/', help='train, test')    
+    parser.add_argument('--output_dir', type=str, default='./output', help='train, test')
     args = parser.parse_args()
 
     if args.mode == 'train':
@@ -248,6 +248,6 @@ if __name__ == "__main__":
     elif args.mode == 'test':
         test_list = gen_list(args.test_dir)
         checkpoint_dir = "checkpoints"
-        evaluate(test_list, checkpoint_dir)
+        evaluate(test_list, checkpoint_dir, args.output_dir)
     else:
         raise Exception("Unknow --mode")
