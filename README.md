@@ -30,8 +30,8 @@ python3 main.py --mode train --train_dir 'training_image_dir' --val_dir 'val_ima
 
 ```
 ### Test
-- Download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) and place it in the folder *checkpoints*
-- Start evaluation and the result will be saved in the folder *output*.
+- Download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) and place it in the folder *"./checkpoints"*
+- Start evaluation and the result will be saved in the folder *"./output"*.
 ```bash
 python3 main.py --mode test --test_dir 'testing_image_dir'
 ```
