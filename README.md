@@ -22,15 +22,16 @@ TensorFlow Implementation of our paper ["Deep Inverse Halftoning via Progressive
 - The patch size is set to 256x256 in the [`model.py`](model.py) (you may change it to any other size as you like).
 - Download the pretrained VGG19 model in [here](https://mega.nz/#!xZ8glS6J!MAnE91ND_WyfZ_8mvkuSa2YcA7q-1ehfSm-Q1fxOvvs).
 
-### Run
-- Set your image folders and hyperparameters in [`main.py`](main.py).
-
+### Train
+- Set hyperparameters in [`main.py`](main.py).
 - Start training.
 ```bash
-python3 main.py --mode train
-```
+python3 main.py --mode train --train_dir 'training_data_dir' --val_dir 'val_data_dir'
 
-- Start evaluation. (download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) in advance)
+```
+### Test
+- Download the [pretrained model](https://drive.google.com/open?id=11wXkRgM-D55biKUPGz7EiSt1TR-1q2iA ) and place it in the folder *checkpoints*
+- Start evaluation.
 ```bash
 python3 main.py --mode test
 ```
