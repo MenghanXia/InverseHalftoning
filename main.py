@@ -236,14 +236,17 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', type=str, default='train', help='train, test')
+    parser.add_argument('--train_dir', type=str, default='../Data_HT/dif/train/', help='train, test')
+    parser.add_argument('--val_dir', type=str, default='../Data_HT/dif/val/', help='train, test')
+    parser.add_argument('--test_dir', type=str, default='../Data_HT/dif/test/', help='train, test')
     args = parser.parse_args()
 
     if args.mode == 'train':
-        train_list = gen_list('../Data_HT/dif/train/')
-        val_list = gen_list('../Data_HT/dif/val/')
+        train_list = gen_list(args.train_dir)
+        val_list = gen_list(args.val_dir)
         train(train_list, val_list, debug_mode=True)
     elif args.mode == 'test':
-        test_list = gen_list('../Data_HT/dif/test/')
+        test_list = gen_list(args.test_dir)
         checkpoint_dir = "checkpoints"
         evaluate(test_list, checkpoint_dir)
     else:
